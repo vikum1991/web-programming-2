@@ -1,0 +1,89 @@
+// Student_Name : kakunawela Weerathungage Vikum Pramilan
+// Student_Id : M23W0142
+
+<!DOCTYPE html>
+<head>
+    <title>
+Assignment 1
+    </title>
+</head>
+<body bgcolor="#90ee90">
+    <script>
+        ////Declare and initializaion Array  and Display Array element  
+        student=[["Wang",80],["Chen",75],["Zhoo",92],["Liu",60],["Yamamoto",91],["Tanaka",82]];
+
+        document.write("There are six students. Their are follows"+"</b>");
+        document.write("</br>");
+
+            for(i=0;i<6;i++){
+                for(j=0;j<2;j++){
+                document.write(student[i][j]);
+                }
+                    document.write("</br>");
+
+
+            }
+
+            document.write("</br>");
+            document.write("</br>");
+
+            //Seperate the Student who get the A pass
+            document.write("The following students are students who can get A </br>");
+
+            for(i=0;i<6;i++){
+                if(student[i][1]>90){
+                    document.write(student[i]+",</br>");
+
+                }
+            }
+
+            //Total score and Average Score
+
+            let score=0;
+            for(i=0;i<6;i++){
+                score+=student[i][1];
+            }
+
+            document.write("</br>");
+            document.write("</br>");
+
+            document.write("Total score is"+" "+score+"</br>");
+            document.write("The Average score is"+" "+score/6+"</br>");
+
+            for(i=0;i<6;i++){
+                for(j=i+1;j<6;j++){
+                        if(student[i][1]<student[j][1]){
+                             x=student[i];
+                            student[i]=student[j];
+                            student[j]=x;
+                        }
+                        
+
+                    
+            }
+           
+
+        }
+
+        document.write("</br>");
+        document.write("</br>");
+
+        //Sorting in Decending oder
+
+        document.write("Sort Score in decending oder</br>");
+
+        for(i=0;i<6;i++){
+            for(j=0;j<2;j++){
+                document.write(student[i][j]);
+            }
+           document.write("</br>");
+}
+           
+
+
+
+
+        
+    </script>
+</body>
+</html>
